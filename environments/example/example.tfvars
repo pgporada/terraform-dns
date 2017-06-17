@@ -1,0 +1,5 @@
+region = "us-east-2"
+env = "example"
+account_ids = ""
+domain_private = ""
+domain_public = ""

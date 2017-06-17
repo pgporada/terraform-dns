@@ -1,0 +1,12 @@
+.kitchen/
+*.backup
+*.retry
+.DS_Store
+.terraform/
+*.png
+*.jpg
+graph.png
+!logo.png
+*.tfvars
+!example_ENV.tfvars
+!environments/*/*.tfvars
