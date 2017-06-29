@@ -1,12 +1,10 @@
 variable "region" {}
-variable "access" {}
-variable "secret" {}
 variable "env" {}
-variable "account_id" {}
 variable "domain_public" {}
 variable "domain_private" {}
 variable "kms_key_id" {}
 variable "account_id" {}
+variable "state_bucket" {}
 
 terraform {
   required_version = ">= 0.9.8"
@@ -32,7 +30,7 @@ data "terraform_remote_state" "vpc" {
     profile    = "${var.env}"
     encrypt    = 1
     acl        = "private"
-    kms_key_id = "arn:aws:kms:${var.region}:${var.account_id}:key/${var.kms_key_id}"
+    kms_key_id = "${var.kms_key_id}"
   }
 }
 

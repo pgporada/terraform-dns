@@ -1,5 +1,6 @@
 region = "us-east-2"
 env = "example"
-account_ids = ""
+account_id = ""
+state_bucket = ""
 domain_private = ""
 domain_public = ""
